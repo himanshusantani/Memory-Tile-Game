@@ -11,6 +11,7 @@
       flex-direction: column;
       min-height: 100vh;
       background: linear-gradient(120deg, #74ebd5, #9face6);
+      gap: 20px;
     }
 
     .game-container {
@@ -47,7 +48,7 @@
     }
 
     .status {
-        margin: 20px 10px;
+       
       font-size: 24px;
       font-weight: bold;
       background: rgba(255,255,255,0.7);
@@ -56,7 +57,7 @@
     }
 
     .restart-btn {
-      margin-top: 20px;
+    
       padding: 10px 20px;
       background-color: #673AB7;
       color: white;
@@ -67,7 +68,13 @@
       box-shadow: 0 5px 10px rgba(0,0,0,0.2);
       transition: background-color 0.3s;
     }
-
+    .copyright{
+      color: #000000;
+    }
+    .copyright a{
+      color: #0011ff;
+      text-decoration: none;
+    }
     .restart-btn:hover {
       background-color: #5E35B1;
     }
