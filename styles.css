@@ -1,0 +1,83 @@
+  * {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      min-height: 100vh;
+      background: linear-gradient(120deg, #74ebd5, #9face6);
+    }
+
+    .game-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+      padding: 30px;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      width: 90vw;
+      max-width: 440px;
+    }
+
+    .tile {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      background-color: #ccc;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      color: transparent;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      user-select: none;
+    }
+
+    .tile.revealed, .tile.matched {
+      background-color: #4CAF50;
+      color: white;
+      cursor: default;
+    }
+
+    .status {
+        margin: 20px 10px;
+      font-size: 24px;
+      font-weight: bold;
+      background: rgba(255,255,255,0.7);
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+
+    .restart-btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #673AB7;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+      transition: background-color 0.3s;
+    }
+
+    .restart-btn:hover {
+      background-color: #5E35B1;
+    }
+
+    @media (max-width: 500px) {
+      .status {
+        font-size: 18px;
+      }
+
+      .tile {
+        font-size: 1.5rem;
+      }
+    }
